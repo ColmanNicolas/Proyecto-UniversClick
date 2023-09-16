@@ -1,0 +1,193 @@
+.bgNAV{
+    background-image: url("/assets/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bgNav2{
+    background-color: #35155D;
+    opacity: 0.7;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.btnSearch{
+        border: 1px solid white;
+}
+
+
+.btnSearch:hover{
+        background-image: url("/assets/fondo.jpg");  
+        border: 1px solid white;
+        scale: 1.1;
+}
+
+.btnSearchPosition{     /*Esta clase sirve para centrar le boton Mi cuenta del header*/
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.btnMC{
+    background-color: #35155D;
+    opacity: 0.6;
+    border: 1px solid white;
+    border-radius: 5px;     /*aca al parle un padding en el boton el responsive no funciona*/
+    
+}
+.btnMC:hover {  
+    background-image: url("/assets/fondo.jpg");
+    scale: 1;
+}
+
+.bgDROP{
+    background-color: #35155D
+}
+
+
+.Options:hover{
+    background-image: url("/assets/fondo.jpg");
+}
+
+
+.btnInput:focus-visible{
+    box-shadow:none;
+    border:none
+}
+
+
+.bgToggler{
+    background-color: rgba(233, 226, 238, 0.2);
+}
+
+@media(max-width:576px){
+    .btnMC{
+        width: 100%;
+        border-radius: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 3rem;  /*Si no coloco este margen el boton se sube a cualquier lado del nabvar de iggual forma que cuando le coloco un padding*/
+        border:none;
+        
+    }
+    .headerFondo{
+        position: relative;
+    }
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin: 0;
+    background-image: url("/assets/fondo.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+
+
+.botonsU {
+    border: 0;
+    background-image: linear-gradient(150deg, #645CBB, #A084DC, #BFACE2);
+    border-radius: 8px;
+    color: #313030;
+    display: flex;
+    font-size: 20px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.image-container img{
+    position: relative;
+    border-radius: 0.8rem !important;
+}
+
+.centered-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+}
+
+
+.botonsU {
+    box-shadow: 0 0 5px rgb(255, 0, 221), 0 0 25px rgb(255, 0, 221);
+}
+
+.botonsU:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+.gallery-item {
+    margin-bottom: 30px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border: 8px solid #734b6d;
+    transition: transform 0.2s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+.page-link {
+    background-color: #A084DC;
+    border: #b60aeb;
+    color: #252525; 
+}
+
+
+.page-link:hover {
+    color:#b60aeb; 
+}
+.headerFondo{
+    background-image: url("/assets/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.modalFondo {
+    background-image: linear-gradient(
+            150deg,            
+            rgba(0, 0, 0)        
+            );
+
+}
+
+.oscurecerFondo {
+    background-color: rgba(0, 0, 0, 0.788);
+}
+.btnDecoration {
+    background-color: #35155D;
+    border: none;
+    border-radius: 2rem;
+    padding-inline: 3rem;
+    padding-block: 0.8rem;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: 6px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+.btnDecoration:hover{
+    background-color: #ffffffda;
+    outline: 3px solid #35155D;
+    color: #35155D;
+    transform: scale(0.9);
+    transition: all 0.7s ease-in-out;
+}

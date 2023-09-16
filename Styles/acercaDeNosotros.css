@@ -1,0 +1,152 @@
+/*
+@media (min-width: 576px){
+    font-size:large;
+}
+@media (max-width: 576px){
+     font-size:small;
+}
+*/
+.bgNAV{
+    background-image: url("/assets/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.bgNav2{
+    background-color: #35155D;
+    opacity: 0.7;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.btnSearch{
+        border: 1px solid white;
+}
+
+
+.btnSearch:hover{
+        background-image: url("/assets/fondo.jpg");  
+        border: 1px solid white;
+        scale: 1.1;
+}
+
+.btnSearchPosition{     /*Esta clase sirve para centrar le boton Mi cuenta del header*/
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.btnMC{
+    background-color: #35155D;
+    opacity: 0.6;
+    border: 1px solid white;
+    border-radius: 5px;     /*aca al parle un padding en el boton el responsive no funciona*/
+    
+}
+.btnMC:hover {  
+    background-image: url("/assets/fondo.jpg");
+    scale: 1;
+}
+
+.bgDROP{
+    background-color: #35155D
+}
+
+
+.Options:hover{
+    background-image: url("/assets/fondo.jpg");
+}
+
+
+.btnInput:focus-visible{
+    box-shadow:none;
+    border:none
+}
+
+
+.bgToggler{
+    background-color: rgba(233, 226, 238, 0.2);
+}
+
+@media(max-width:576px){
+    .btnMC{
+        width: 100%;
+        border-radius: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 3rem;  /*Si no coloco este margen el boton se sube a cualquier lado del nabvar de iggual forma que cuando le coloco un padding*/
+        border:none;
+        
+    }
+    .headerFondo{
+        position: relative;
+    }
+}
+
+body {
+ justify-content: center;
+ align-items: center;
+ background: #16384c;
+}
+
+.gallery-item {
+ margin-bottom: 100px;
+}
+
+.gallery-item img {
+ max-width: 250%;
+ border-radius: 0.7rem;
+ border: 3px solid #1ee3fd70;
+ transition: transform 0.2s;
+}
+
+.gallery-item img:hover {
+ will-change: 100%;
+ transform: scale(2);
+ box-shadow: 10px 5px 8px 4px rgba(0,0,0,0.82);
+ -webkit-box-shadow: 10px 5px 8px 4px rgba(0,0,0,0.82);
+ -moz-box-shadow: 10px 5px 8px 4px rgba(0,0,0,0.82);
+}
+
+.card {
+ padding: 30px;
+}
+.container1 .card {
+ max-width: 300px;
+ background-color: #A084DC;
+ margin: 40px 10px;
+ transition: 0.3s ease-in-out;
+}
+
+.container1 .card .content {
+ position: relative;
+ margin-top: -140px;
+ padding: 10px 15px;
+ text-align: center;
+ color: #111;
+ visibility: hidden;
+ opacity: 0;
+ transition: 0.3s ease-in-out;
+}
+.container1 .card:hover .content {
+ visibility: visible;
+ opacity: 1;
+ margin-top: -40px;
+ transition-delay: 0.3s;
+}
+
+.page-link {
+ background-color: #A084DC;
+ border: #b60aeb;
+ color: #252525; 
+}
+
+
+.page-link:hover {
+ color:#b60aeb; 
+}

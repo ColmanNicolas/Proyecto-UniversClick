@@ -1,0 +1,248 @@
+.bgNAV{
+    background-image: url("/assets/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.bgNav2{
+    background-color: #35155D;
+    opacity: 0.7;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.btnSearch{
+        border: 1px solid white;
+}
+
+
+.btnSearch:hover{
+        background-image: url("/assets/fondo.jpg");  
+        border: 1px solid white;
+        scale: 1.1;
+}
+
+.btnSearchPosition{     /*Esta clase sirve para centrar le boton Mi cuenta del header*/
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.btnMC{
+    background-color: #35155D;
+    opacity: 0.6;
+    border: 1px solid white;
+    border-radius: 5px;     /*aca al parle un padding en el boton el responsive no funciona*/
+    
+}
+.btnMC:hover {  
+    background-image: url("/assets/fondo.jpg");
+    scale: 1;
+}
+
+.bgDROP{
+    background-color: #35155D
+}
+
+
+.Options:hover{
+    background-image: url("/assets/fondo.jpg");
+}
+
+
+.btnInput:focus-visible{
+    box-shadow:none;
+    border:none
+}
+
+
+.bgToggler{
+    background-color: rgba(233, 226, 238, 0.2);
+}
+
+@media(max-width:576px){
+    .btnMC{
+        width: 100%;
+        border-radius: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 3rem;  /*Si no coloco este margen el boton se sube a cualquier lado del nabvar de iggual forma que cuando le coloco un padding*/
+        border:none;
+        
+    }
+    .headerFondo{
+        position: relative;
+    }
+}
+body {
+    background-image:linear-gradient(
+        157deg,
+        #000000,
+        #000000,
+        #271355,
+        #271355,
+        #0e0030,
+        #1a0057,
+        #000000,
+        #000000
+     ) ;
+     display: grid;
+     min-height: 100vh;
+     grid-template-rows: auto auto  1fr auto;
+}
+.decoracionTitulo{
+    color: rgb(255, 255, 255);
+    
+    
+}
+
+.w-60{
+    width: 60%;
+}
+.w-70{
+    width: 70%;
+}
+.w-70{
+    width: 70%;
+}
+.w-80{
+    width: 80%;
+}
+.w-90{
+    width: 90%;
+}
+.navbarModificacion{
+    background-color: #645cbb5b;
+    border: 1px solid rgba(255, 255, 255, 0.308);
+    
+}
+.modalFondo{
+    background-image:linear-gradient(
+        150deg,
+        rgba(0, 0, 0 ), 
+        
+        rgb(59, 10, 99),    
+         
+        rgba(0, 0, 0)  
+     ) ;
+     
+}
+.containerFormModification{
+    width: 500px;
+    height: 570px;
+    background-color: #00000091;
+    border-radius: 0.8rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    outline:2px solid #ffffff62;
+}
+
+
+
+@media(max-width:550px){
+    .containerFormModification{
+        width: 90%;
+        font-size: 0.85rem;
+    }
+}
+@media(max-width:400px){
+    .containerFormModification{
+        width: 100%;
+        font-size: 0.77rem;
+    }
+}
+.btnDecoration {
+    background-color: #35155D;
+    border: none;
+    border-radius: 2rem;
+    padding-inline: 2.5rem;
+    padding-block: 0.5rem;
+    color: #ffffff;
+    margin-inline: 2rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    outline: 1px solid #FFFFFF;
+}
+.btnDecoration:hover{
+    background-color: #ffffffda;
+    outline: 2px solid rgb(87, 0, 158);
+    color: rgb(62, 1, 102);  
+    font-weight: 800;
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+}
+@media(max-width:400px){
+    .btnDecoration{
+        font-size: 0.6rem;
+        padding-inline: 1.5rem;
+    }
+}
+
+.formCampos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+    
+}
+
+.formCampos:hover{
+    transform: scale(1.05);
+    transition:  0.5s;
+}
+
+.formCampos label {
+    padding-left: 0.3rem;
+    font-size: 1.15rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    text-shadow: 3px 3px 4px rgba(29, 0, 146, 0.993);
+    letter-spacing: 1px;
+    
+}
+
+.formCampos input {
+    
+    background-color: rgba(18, 4, 56, 0.412);
+    border-radius: 1rem;
+    border: none;
+    border-bottom: 3px solid #35155D;
+    
+    padding-left: 0.7rem;
+    color: white;
+    font-weight: 600;
+    
+}
+.decoracionLinks{
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 6px rgba(29, 0, 146, 0.993);
+    letter-spacing: 1px;
+}
+.footerModificacion {
+
+    margin-top: 5rem;
+    padding-block: 5rem;
+    background-color: #1e03589b;
+    border: 1px solid rgba(255, 255, 255, 0.308);
+
+}
+.oscurecerFondo{
+    background-color: rgba(0, 0, 0, 0.788);
+}
+.headerFondo{
+    background-image: url("/assets/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

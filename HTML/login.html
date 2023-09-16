@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Assets/LOGO UNIVERSCLICK.jpeg">
+    <link rel="stylesheet" href="../Styles/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>UniversClick</title>
+</head>
+
+<body>
+    <nav class="container-fluid headerFondo bgNAV ">
+        <div class="row w-100 d-flex flex-row align-items-center  ">
+            <div class="col ">
+                <img src="../assets/logoUC.png" width="200px" alt="Logo Univers Click">
+            </div>
+            <div class="col text-end ">
+                <button class="btnMC  " type="button">
+                    <a class=" btn nav-link active text-light" aria-current="page" href="/HTML/login.html"><B>MI
+                            CUENTA</B></a>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand bgNav2">
+        <div class="container-fluid d-flex flex-row ">
+            <div>
+                <a class="navbar-brand text-white fw-bold" href="/index.html">Inicio</a>
+            </div>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+                <form class="d-flex flex-row" role="search">
+                    <input class="form-control me-2 btnInput" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btnSearch text-white fw-medium" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid mt-5 w-100">
+        <div class="row row-cols-1 m-auto pt-5 containerFormModification  ">
+
+            <form
+                class="w-70  d-flex mb-auto flex-column justify-content-center align-items-center fondoGradiente px-0 ">
+
+                <div class="col w-100 decoracionFondo mb-4 text-center py-2">
+                    <h2 class="decoracionTitulo">INICIAR SESION</h2>
+                </div>
+                <div class=" formCampos col-10 mb-3">
+                    <label for="exampleInputEmail1" class="form-label ">Direccion de Correo Electronico</label>
+                    <input type="email" class=" inputModification" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class=" formCampos col-10 mb-4">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class=" inputModification" id="exampleInputPassword1">
+                </div>
+                <div class=" mb-4 text-center   ">
+                    <a href="../HTML/pagina404.html">
+                        <button type="button" class="btnDecoration">INICIAR SESION</button>
+
+                    </a>
+                </div>
+                <div class="col">
+                    <p>¿No tienes cuenta? <a class="decoracionLinks" href="../HTML/suscripcionPaso1.html"> Registrate
+                            aquí</a></p>
+                </div>
+                <div class="col">
+                    <button type="button" class="decoracionLinks bg-transparent" data-bs-toggle="modal"
+                        data-bs-target="#modalRecuperacion">
+                        ¿Olvidaste tu contraseña?
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="modal oscurecerFondo" id="modalRecuperacion" tabindex="-1" aria-labelledby="modalRecuperacionLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  ">
+            <div class="modal-content modalFondo ">
+                <form>
+                    <div class="modal-header ">
+                        <h1 class="modal-title fs-5 text-light" id="modalRecuperacionLabel">Restablecer contraseña</h1>
+                        <button type="button" class="btn-close-white " arn data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class=" containerFormModificacion">
+                            <div class="row row-cols-1 ">
+                                <div>
+                                    <p class="text-light fw-medium">Ingresa tu correo electronico de UniversClick y te
+                                        enviaremos un enlace para que
+                                        puedas restablecer tu contraseña</p>
+                                </div>
+                                <div class="w-100 m-auto formCampos mb-3">
+                                    <label for="correoElectronicoRec" class="w-80 m-auto form-label text-light">Correo
+                                        electrónico</label>
+                                    <input type="email" class="w-80 m-auto " id="correoElectronicoRec"
+                                        name="correoRecuperacion" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btnDecoration" data-bs-dismiss="modal">CANCELAR</button>
+                        <button type="submit" class="btnDecoration" data-bs-dismiss="modal">ENVIAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid p-5 headerFondo mt-5">
+        <div class="row w-100 text-center">
+            <div class="col-md-6 col-lg-3">
+                <img src="../assets/logoUC.png" alt="" width="200px">
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                    <li class="text-white">Redes sociales</li>
+                    <div class="mt-2">
+                        <a href="/HTML/pagina404.html">
+                            <img src="../assets/logoIG.png" alt="ig" width="30px">
+                        </a>
+                        <a href="/HTML/pagina404.html">
+                            <img src="../assets/logoFB.png" alt="fb" width="30px">
+                        </a>
+                        <a href="/HTML/pagina404.html">
+                            <img src="../assets/logoTW.png" alt="tw" width="30px">
+                        </a>
+                    </div>
+
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <ul class="list-unstyled">
+                    <a href="/HTML/paginaContacto.html" class="text-decoration-none text-white">
+                        <li>Contactanos</li>
+                    </a>
+                    <a href="/HTML/acercaDeNosotros.html" class="text-decoration-none text-white"><!-- pendienteee-->
+                        <li class="mt-2">Acerca de nosotros</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <ul class=" list-unstyled">
+                    <a href="/HTML/pagina404.html" class="text-decoration-none text-white">
+                        <li>Políticas de privacidad</li>
+                    </a>
+                    <a href="/HTML/pagina404.html" class="text-decoration-none text-white">
+                        <li class="mt-2">Términos y condiciones</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="border-top">
+            <div>
+                <h5 class="text-light text-center mt-3"> Copiright &copy; 2023 UniversClick</h5>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

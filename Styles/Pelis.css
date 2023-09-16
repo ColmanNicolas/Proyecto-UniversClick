@@ -1,0 +1,587 @@
+body {
+    background-image:linear-gradient(
+        157deg,
+        #000000,
+        #000000,
+        #271355,
+        #271355,
+        #0e0030,
+        #1a0057,
+        #000000,
+        #000000
+     ) ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.flex {
+    margin: auto;
+    background-color: rgb(36, 10, 58, 0.70);
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(73, 6, 94, 0.507);
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+    margin-top: 1rem;
+
+}
+
+@media(max-width:500px) {
+    .flex {
+        width: 450px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin: auto;
+    }
+}
+
+@media(max-width:450px) {
+    .flex {
+        width: 400px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin: auto;
+    }
+}
+
+@media(max-width:400px) {
+    .flex {
+        width: 350px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin: auto;
+    }
+}
+
+@media(max-width:350px) {
+    .flex {
+        width: 320px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin: auto;
+    }
+}
+
+form img {
+    width: 60%;
+    border-radius: 30px;
+    margin-top: -1rem;
+    margin-bottom: 1rem
+}
+
+.contact {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+form label {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 2rem !important;
+    margin-bottom: 15px;
+}
+
+form input {
+    border-radius: 1rem !important;
+}
+
+input,
+textarea {
+    width: 100%;
+    text-align: left;
+    padding: 17px 25px;
+    border-radius: 1rem;
+    margin-bottom: 20px;
+    background-color: #EDFFF0;
+    border: 2px solid #f0faf1;
+    color: #283629;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #b5cab6;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(139, 87, 87);
+}
+
+.form-txt {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.btnenviar {
+    font-size: 18px;
+    color: #ffffff;
+    border: 0;
+    border-radius: 25px;
+    background-color: #1a082e;
+    box-shadow: 0 0 20px rgba(73, 6, 94, 0.507);
+    cursor: pointer;
+    text-align: center;
+}
+
+.btnenviar:hover {
+    background-color: #5f2f96;
+}
+
+.bgNAV {
+    background-image: url("/assets/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bgNav2 {
+    background-color: #35155D;
+    opacity: 0.7;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.btnSearch {
+    border: 1px solid white;
+}
+
+
+.btnSearch:hover {
+    background-image: url("/assets/fondo.jpg");
+    border: 1px solid white;
+    scale: 1.1;
+}
+
+.btnSearchPosition {
+    /*Esta clase sirve para centrar le boton Mi cuenta del header*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btnMC {
+    background-color: #35155D;
+    opacity: 0.6;
+    border: 1px solid white;
+    border-radius: 5px;
+    /*aca al parle un padding en el boton el responsive no funciona*/
+
+}
+
+.btnMC:hover {
+    background-image: url("/assets/fondo.jpg");
+    scale: 1;
+}
+
+.bgDROP {
+    background-color: #35155D
+}
+
+
+.Options:hover {
+    background-image: url("/assets/fondo.jpg");
+}
+
+
+.btnInput:focus-visible {
+    box-shadow: none;
+    border: none
+}
+
+
+.bgToggler {
+    background-color: rgba(233, 226, 238, 0.2);
+}
+
+
+.posterMegalodonGrande {
+
+    width: 100%;
+    height: 700px;
+    margin-top: 10px !important;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+        url(/assets/megalodon\ 2\ fondo2.jpg) no-repeat center center fixed;
+    display: flex;
+    text-align: left;
+    color: white;
+
+}
+
+@media(max-width:600px) {
+    .posterMegalodonGrande {
+        margin-top: 1px;
+        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+        url(/assets/megalodon\ 2\ poster.jpg) no-repeat center center fixed !important;
+
+        height: 450px;
+        display: flex;
+        justify-content: stretch;
+
+    }
+    .posterBarbieGrande{
+        margin-top: 1px !important;
+        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), !important;
+
+        height: 450px !important;
+        display: flex;
+        justify-content: stretch;
+
+    }
+    .posterSpidermanGrande{
+        margin-top: 10px !important;
+        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+        height: 550px !important;
+        display: flex;
+        justify-content: stretch;
+    }
+    .posterOppenGrande{
+        margin-top: 10px !important;
+        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+        url(/Assets/oppenheimer\ poster.jpg) !important ;
+        height: 500px !important;
+        display: flex;
+        justify-content: stretch;
+    }
+    .posterone{
+        margin-top: 10px !important;
+        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),!important;
+        height: 500px !important;
+        display: flex;
+        justify-content: stretch;
+    }
+
+    br {
+        height: 0% !important;
+        display: none !important;
+    }
+}
+.posterBarbieGrande {
+    width: 100%;
+    height: 700px;
+    margin-top: 10px ;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+        url(/assets/BARBIE.jpg) no-repeat center center fixed;
+    display: flex;
+    text-align: left;
+    color: white;
+}
+.posterSpidermanGrande {
+    width: 100%;
+    height: 700px;
+    margin-top: 10px ;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+        url(/assets/spiderman\ fondo2.jpg) no-repeat center center fixed;
+    display: flex;
+    text-align: left;
+    color: white;
+}
+
+
+
+.posterOppenGrande {
+   width: 100%;
+    height: 700px;
+    margin-top: 10px ;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+        url(/assets/oppenheimer\ fondo2.jpg) no-repeat center center fixed;
+    display: flex;
+    text-align: left;
+    color: white;
+}
+
+.posterone {
+
+    height: 700px;
+    margin-top: 0px !important;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+        url(/assets/one\ piece\ fondo.jpg) no-repeat center center fixed;
+    display: flex;
+    text-align: left;
+    color: white;
+}
+
+.posterone img {
+    margin-left: 7rem !important;
+    margin-right: 2rem;
+    margin-top: 4rem;
+    text-align: left;
+    justify-content: start;
+    width: 350px;
+    height: 400px;
+}
+@media(max-width:1000px ){
+    
+    .posterone img{
+        display: none;
+    }
+}
+
+.texto {
+    margin-left: 10%;
+    margin-top: 2rem;
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.texto h1 {
+    font-size: 2.7rem;
+
+}
+
+.texto h5 {
+    font-size: 1.5rem;
+}
+
+.texto p {
+    font-size: 1.3rem;
+}
+@media(max-width:1000px) {
+    .texto {
+        margin-inline: 8%;
+    }
+}
+@media(max-width:600px) {
+
+    .texto h1 {
+        
+        font-size: 1.7rem;
+    }
+
+    .texto h5 {
+        font-size: 1rem;
+    }
+
+    .texto p {
+        font-size: 0.85rem;
+    }
+}
+
+
+.descripcion {
+    max-width: 600px;
+    max-height: 100px;
+    overflow: auto;
+    overflow-y: auto;
+    overflow-x: auto;
+    color: slateblue;
+}
+
+.actores {
+    max-width: 600px;
+    max-height: 100px;
+    overflow: auto;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.pelicula {
+    border: 5px solid rgba(39, 0, 68, 0.438);
+    border-radius: 2rem;
+    padding: 1rem !important;
+    display: flex;
+    margin: auto;
+    width: 90%;
+    background-color: rgba(39, 0, 68, 0.438);
+    margin-block: 3rem;
+
+}
+
+@media(max-width:420px) {
+    .pelicula {
+        padding-block: 0.8rem !important;
+        padding-inline: 0.4rem !important;
+        width: 100%;
+    }
+}
+
+
+.headerFondo {
+    background-image: url("/assets/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.peliculassugeridas {
+    margin-inline: 8%;
+    margin-top: 1rem;
+    gap: 2rem
+}
+.capitulos{
+  width: 500px;
+  margin-inline: 8%;
+  margin-top: 1rem;
+  gap: 2rem
+}
+@media(max-width:800px) {
+    .capitulos {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+@media(max-width:600px) {
+    .peliculassugeridas {
+        margin-inline: 0px;
+    }
+}
+
+.pelisug {
+    width: 200px;
+    background-color: transparent;
+    border-radius: 0.5rem;
+} 
+.pelisug:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cap {
+    margin-inline: 1rem;
+    margin-block: 4rem;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 0.5rem;
+}
+.cap:hover{
+    transform: scale(1.1);
+}
+
+.cap h5 {
+    margin-block: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.cap img {
+    width: 100%
+}
+
+.pelisug img {
+    width: 100%
+}
+
+.pelisug h5 {
+    text-align: center;
+    color: white;
+}
+
+.pelisug h1 {
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+}
+
+.uno {
+    height: 250px;
+}
+
+.tiburon {
+    height: 250px;
+}
+
+.anaconda {
+    height: 250px;
+}
+
+
+@media(max-width:576px) {
+    .btnMC {
+        width: 100%;
+        border-radius: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 3rem;
+        border: none;
+
+    }
+
+  
+  
+
+    .headerFondo {
+        position: relative;
+    }
+}
+.modalFondo {
+    background-image: linear-gradient(
+            150deg,            
+            rgba(0, 0, 0)        
+            );
+
+}
+
+.oscurecerFondo {
+    background-color: rgba(0, 0, 0, 0.788);
+}
+.w-10 {
+    width: 10%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-90 {
+    width: 90%;
+}
+.btnDecoration {
+    background-color: #35155D;
+    border: none;
+    border-radius: 2rem;
+    padding-inline: 3rem;
+    padding-block: 0.8rem;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: 6px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+.btnDecoration:hover{
+    background-color: #ffffffda;
+    outline: 3px solid #35155D;
+    color: #35155D;
+    transform: scale(0.9);
+    transition: all 0.7s ease-in-out;
+}

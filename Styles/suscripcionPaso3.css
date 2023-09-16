@@ -1,0 +1,314 @@
+.bgNAV{
+    background-image: url("/assets/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bgNav2{
+    background-color: #35155D;
+    opacity: 0.7;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.btnSearch{
+        border: 1px solid white;
+}
+
+
+.btnSearch:hover{
+        background-image: url("/assets/fondo.jpg");  
+        border: 1px solid white;
+        scale: 1.1;
+}
+
+.btnSearchPosition{     /*Esta clase sirve para centrar le boton Mi cuenta del header*/
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.btnMC{
+    background-color: #35155D;
+    opacity: 0.6;
+    border: 1px solid white;
+    border-radius: 5px;     /*aca al parle un padding en el boton el responsive no funciona*/
+    
+}
+.btnMC:hover {  
+    background-image: url("/assets/fondo.jpg");
+    scale: 1;
+}
+
+.bgDROP{
+    background-color: #35155D
+}
+
+
+.Options:hover{
+    background-image: url("/assets/fondo.jpg");
+}
+
+
+.btnInput:focus-visible{
+    box-shadow:none;
+    border:none
+}
+
+
+.bgToggler{
+    background-color: rgba(233, 226, 238, 0.2);
+}
+
+@media(max-width:576px){
+    .btnMC{
+        width: 100%;
+        border-radius: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 3rem;  /*Si no coloco este margen el boton se sube a cualquier lado del nabvar de iggual forma que cuando le coloco un padding*/
+        border:none;
+        
+    }
+    .headerFondo{
+        position: relative;
+    }
+}
+body {
+    background-image:linear-gradient(
+        157deg,
+        #000000,
+        #000000,
+        #271355,
+        #271355,
+        #0e0030,
+        #1a0057,
+        #000000,
+        #000000
+     ) ;
+}
+
+
+.navbarModificacion {
+    background-color: #645cbb5d;
+    border: 1px solid rgba(255, 255, 255, 0.308);
+
+}
+
+.rowSeleccionModification {
+    background-color: rgba(46, 46, 46, 0.664);
+    border-radius: 3rem;
+    margin: 0px;
+    padding-block: 1rem;
+    width: 60%;
+
+}
+
+.rowSeleccionModification:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+ 
+ }
+ 
+ 
+ @media(max-width:575px) {
+     .rowSeleccionModification {
+         padding: 0;
+         margin: 0;
+         display: none !important;
+     }
+ 
+ }
+ @media(min-width:576px){
+     .botonDispositivoMovil{
+         display: none !important;
+     }
+ }
+
+.textoSeleccionPlan {
+
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(29, 0, 146, 0.777);
+}
+
+.btnDecoration {
+    background-color: #35155D;
+    border: none;
+    border-radius: 2rem;
+    padding-inline: 3rem;
+    padding-block: 0.8rem;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: 6px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+.btnDecoration:hover{
+    background-color: #ffffffda;
+    outline: 2px solid rgb(87, 0, 158);
+    color: rgb(62, 1, 102);
+    transform: scale(0.9);
+    transition: all 0.6s ease;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+
+
+@media(max-width:768px) {
+    .rowSeleccionModification {
+        width: 75%;
+        padding-block: 0.5rem;
+        height: 50px;
+    }
+
+    .btnDecoration {
+        padding-inline: 2rem;
+        padding-block: 0.4rem;
+
+    }
+}
+
+
+
+.textoTituloprincipal {
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 6px rgba(28, 0, 146, 1);
+
+    margin-bottom: 10%;
+}
+
+@media(max-width:490px) {
+    
+
+    .textoTituloprincipal {
+        font-size: 1.7rem;
+    }
+}
+
+.textoFormulario {
+    color: rgb(255, 255, 255);
+}
+
+
+.containerFormModificacion {
+    background-color: #00000088;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    border: 1px solid rgba(138, 211, 211, 0.333);
+    border-radius: 0.5rem;
+    margin-inline: 2rem;
+    padding-inline: 1rem;
+}
+
+@media(min-width:650px) {
+    .containerFormModificacion {
+        margin: auto;
+        width: 70%;
+    }
+}
+
+@media(min-width:760px) {
+    .containerFormModificacion {
+        margin: auto;
+        width: 70%;
+    }
+}
+
+@media(min-width:1100px) {
+    .containerFormModificacion {
+        width: 700px;
+        margin: auto;
+    }
+
+    .rowSeleccionModification {
+        width: 650px;
+        margin: auto;
+    }
+}
+.textoFormulario input:focus-visible {
+    border: none;
+    outline: none;
+    outline: 2px solid rgba(64, 224, 208, 0.789);
+    background-color: #000000a6;
+}
+
+.textoFormulario input:hover {
+    border: none;
+    outline: none;
+    outline:  1px solid rgba(64, 224, 208, 0.789);
+    background-color: #000000a6;
+}
+
+.footerModificacion {
+
+    margin-top: 5rem;
+    padding-block: 5rem;
+    background-color: #1e03589b;
+    border: 1px solid rgba(255, 255, 255, 0.308);
+
+}
+.form button{
+    background-color: rgb(255, 46, 9);
+    color: aqua;
+}
+.parrafoConfirmacion{
+    font-size: 1.2rem;
+}
+@media(max-width:800px){
+    .parrafoConfirmacion{
+        font-size: 1.1rem;
+    }
+}
+@media(max-width:400px){
+    .parrafoConfirmacion{
+        font-size: 1rem;
+    }
+}
+.parrafoCodigo{
+    font-size: 1rem;
+}
+@media(max-width:400px){
+    .parrafoCodigo{
+        font-size: 0.82rem;
+    }
+}
+
+
+.textoFormulario input {
+    background-color: rgba(43, 21, 97, 0.438);
+    width: 90px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    border-radius: 1rem;
+    border: none;
+    border-bottom: 2px solid rgba(128, 0, 128, 0.792);
+    border-top: 1px solid rgba(236, 236, 236, 0.789);
+    padding-left: 0.7rem;
+}
+.lineaDivisora {
+    display: flex;
+    justify-content: center;
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.252);
+    width: 80%;
+    margin-block: 1.3rem;
+}
+.divRelleno{
+    height: 200px;
+}
+.headerFondo{
+    background-image: url("/assets/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

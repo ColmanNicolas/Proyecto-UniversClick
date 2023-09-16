@@ -1,0 +1,46 @@
+body{
+    background-image: url(/assets/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.contenido{
+    padding-inline: 2rem;
+}
+
+
+.bgCard{
+    backdrop-filter: blur(10px);
+    border-radius: 10px solid white;
+}
+
+@media(max-width:576px){ 
+    .imgCard img{
+        width: 80px;
+    }
+    .contenido h5{
+        font-size:10px;
+    }
+}
+.btnDecoration {
+    background-color: #35155D;
+    border: none;
+    border-radius: 2rem;
+    padding-inline: 2.5rem;
+    padding-block: 0.5rem;
+    color: #ffffff;
+    margin-inline: 2rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    outline: 1px solid #FFFFFF;
+}
+.btnDecoration:hover{
+    background-color: #ffffffda;
+    outline: 2px solid rgb(87, 0, 158);
+    color: rgb(62, 1, 102);  
+    font-weight: 800;
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+}
